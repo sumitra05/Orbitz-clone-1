@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>popup</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: white;
+        text-align: center;
+      }
+
+      .popup {
+        width: 10%;
+        margin: 20px auto;
+        text-align: center;
+        border: 1px solid rgb(22, 21, 21);
+      }
+      #form_text {
+        text-align: left;
+      }
+      #form_text p:hover {
+        color: rgb(24, 85, 85);
+        cursor: pointer;
+      }
+
+      #sign:hover {
+        color: rgb(39, 129, 129);
+        cursor: pointer;
+      }
+      #hoverPop {
+        display: none;
+        position: absolute;
+        top: 45px;
+        width: 400px;
+        padding: 30px;
+        height: auto;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+      #btn {
+        padding: 8px;
+        width: 100%;
+        background-color: rgb(167, 20, 45);
+      }
+      #btn a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+      }
+      #createAC{
+        margin-top: 20px;
+      }
+      #createAC a{
+        color: rgb(20, 77, 77);
+        text-decoration: none;
+      }
+      #hoverPop > h5 {
+        color: rgb(20, 77, 77);
+        cursor: pointer;
+      }
+
+      #hoverPop > h3 {
+        margin-top: -10px;
+      }
+
+      #hoverPop > p {
+        /* font-weight: 400; */
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <div class="popup">
+        <botton id="sign" onclick="openPopup()" style="padding: 30px"
+          >Sign in</botton
+        >
+        <div id="hoverPop">
+          <h3>Members can access discounts, points and special features</h3>
+
+          <div id="btn">
+            <a href="./sign_in.html">Sign in</a>
+          </div>
+
+          <div id="createAC">
+            <a  href="./create_ac.html">Create a free account</a>
+          </div>
+
+          <div id="form_text">
+            <p>List of favorites</p>
+            <p>Loyalty program</p>
+            <hr />
+            <p>Feedback</p>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </body>
+  <script>
+    function openPopup() {
+      document.getElementById("hoverPop").style.display = "block";
+    }
+
+    function closePopup() {
+      document.getElementById("hoverPop").style.display = "none";
+    }
+
+    window.onclick = function (event) {
+      var modal = document.getElementById("HoverPop");
+      if (event.target == modal) {
+        closePopup();
+      }
+    };
+  </script>
+</html>

@@ -1,0 +1,446 @@
+body {
+    background-color: whitesmoke;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  #container {
+    width: 80%;
+    margin: auto;
+  }
+  #art {
+    display: flex;
+    gap: 15px;
+  }
+  .change {
+    background-color: white;
+    border: 1px solid rgb(230, 217, 217);
+    width: 34%;
+    cursor: pointer;
+    display: flex;
+    padding-left: 10px;
+  }
+
+  .image {
+    height: 30px;
+    width: 30px;
+    margin-top: 20px;
+  }
+  .lake {
+    width: 50%;
+    background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2021/11/18/ORB_Blog_NationalParks_imgB_1199x399_20211117.jpg");
+    height: 250px;
+    margin-top: 1%;
+    background-size: cover;
+  }
+  .road {
+    width: 50%;
+    background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2021/11/18/ORB_Blog_RoadTrips_imgB_1199x399_20211117.jpg");
+    height: 250px;
+    margin-top: 1%;
+    background-size: cover;
+  }
+
+  #image_div {
+    display: flex;
+    gap: 20px;
+    margin-top: -10px;
+  }
+
+  .left {
+    width: 90%;
+    height: 100%;
+  }
+
+  .image_front,
+  h2 p {
+    margin-left: 20px;
+    margin-top: 90px;
+    font-weight: bold;
+    color: white;
+    line-height: 10px;
+  }
+
+  #btn {
+    width: 20%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+    color: rgb(22, 71, 71);
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  #reward {
+    display: flex;
+    margin-top: 50px;
+    height: 290px;
+    background-color: white;
+    
+  }
+
+  .text {
+    margin-left: -12%;
+    margin-top: -15px;
+  }
+
+  ul > li {
+    color: grey;
+  }
+
+  .country_code{
+    color: black;
+    font-size: 15px;
+    font-weight: 100;
+  }
+
+  #get_app {
+    padding: 10px;
+    background-color: rgb(211, 59, 85);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    
+  }
+  .Qr_code > img {
+    width: 150px;
+    margin-top: 15px;
+    margin-left: -10%;
+   
+  }
+  h6 {
+    font-weight: bold;
+    margin-top: -3px;
+    font-size: 15px;
+   
+  }
+  #slct{
+    padding: 10px;
+    border-radius: 3px;
+    font-family: 15px;
+
+  }
+
+  select > option{
+    color: rgb(14, 77, 77);
+    cursor: pointer;
+    font-size: 12px;
+    margin:10px ;
+  }
+
+  select{
+    padding: 15px;
+    width: 32%;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+  .more_destination > select{
+    margin: 5px;
+    border:transparent;
+
+  }
+
+  #footerSection_div{
+    display: flex;
+   
+    margin-top: 4%;
+    gap: 0px;
+    /* border: 1px solid red; */
+  }
+  .expediaImg{
+    margin-top: 1%;
+
+  }
+
+  .Expedia{
+    display: flex;
+    gap: 10px;
+    /* margin-top: 0px; */
+  }
+  
+  .company::first-line{
+    color: black;
+    font-weight: 700;
+  }
+
+  .company{
+    color: rgb(22, 119, 119);
+    cursor:pointer;
+    line-height: 50px;
+    margin-left: 25px;
+    /* margin-top: -15px; */
+    font-size: 14px;
+    
+  }
+
+  .footer{
+    color: gray;
+    font-size: 13px;
+    text-align: center;
+  }
+  
+  #help{
+    display: flex;
+    float: right;
+    border: 0.1px solid rgb(189, 180, 180);
+    padding: 10px;
+    box-shadow:
+   rgb(172, 164, 164) 2px 2px rgb(153, 146, 134);
+    border-radius: 30px;
+    color: rgb(16, 95, 95);
+    font-weight: 600;
+    cursor: pointer;
+   
+  
+  }
+   #help > div{
+     margin-top: -5px;
+     margin-left: 5px;
+   }
+
+@media only screen and (max-width: 600px) {
+    #container {
+    width: 95%;
+    
+  }
+    #art {
+    display: block;
+    white-space:nowrap;
+  
+  }
+   
+  .change {
+     width: 100%;
+     margin-bottom: 10px;
+     line-height: 10px;
+  }
+
+  .image {
+    height: 20px;
+    width: 20px;
+    margin-top: 10px;
+  }
+
+  .left> p {
+    font-size: small;
+    color: rgb(82, 76, 76);
+  }
+
+  #image_div {
+    display: block;
+    margin-top: -10%;
+  }
+
+  .lake,.road {
+    width: 105%;
+    height: 400px;
+   margin-top: -15%;
+  }
+
+ #btn {
+    width: 100px;
+  }
+
+  #add{
+    display: none;
+  }
+
+  #add2{
+    background-image: url("https://tpc.googlesyndication.com/simgad/15774825149029875339?");
+    width: 85%;
+    height: 250px;
+    margin: 40px;
+   }
+
+  #reward {
+    display: block;
+    width: 100%;
+    height: 470px; 
+  }
+   #reward_sec_img{
+    width: 133%;
+  }
+  .text {
+    margin-top: 8px;
+    margin-left: 10px;
+    font-size: small;
+  }
+  .text>h3{
+    display: none;
+  }
+  #slct,input{
+    display: none;
+  }
+
+  #get_app {
+    width: 100%;
+    font-weight: 600;
+  }
+  span{
+    display: none;
+  }
+
+  .Qr_code {
+   display: none;
+  }
+
+  select{
+    display: block;
+    width: 100%;
+    border: transparent;
+    justify-content: space-between;
+    padding: 0.75rem 0.75rem;
+  }
+
+  .more_destination > select{
+    margin: 10px;
+  }
+  #footerSection_div{
+    display: block;
+    margin-top: 4%;
+    gap: 0px;
+    /* border: 1px solid red; */
+  }
+  .expediaImg{
+    margin-top: 1%;
+
+  }
+
+  .Expedia{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  
+  
+
+  .company{
+    line-height: 25px;
+    margin-top: 10px;
+  }
+   
+  .image_front>
+   h2 {
+    padding-top: 190px;
+  }
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+#container {
+    width: 95%;
+    
+  }
+  .change {
+     width: 100%;
+     margin-bottom: 5px;
+     line-height: 18px;
+   }
+   .image {
+    height: 15px;
+    width: 15px;
+    margin-top: 15px;
+  }
+  .left> p {
+    font-size: small;
+    color: rgb(82, 76, 76);
+  }
+
+  #image_div {
+    display: block;
+    margin-top: -10%;
+  }
+
+  .lake,.road {
+    width: 100%;
+    height: 300px;
+   margin-top: -8%;
+   
+  }
+  #add{
+    display: none;
+  }
+
+  #add2{
+    background-image: url("https://tpc.googlesyndication.com/simgad/6810560861527654904?");
+    width: 75%;
+    height: 65px;
+    margin: 40px;
+  }
+
+
+  #reward {
+    width: 100%;
+    border: 1px solid rgb(223, 210, 210);
+  }
+   #reward_sec_img > img{
+    width: 100%;
+    height:290px;
+  }
+  .text {
+    margin-top: 6px;
+  }
+
+  ul > li {
+    font-size: 14px;
+  }
+  .text>h3{
+    display: none;
+  }
+  #slct,input{
+    display: none;
+  }
+  #get_app {
+    border: transparent;
+    padding: 15px;
+  }
+
+  span{
+    display: none;
+  }
+
+  .Qr_code {
+   display: none;
+  }
+  
+  select{
+    display: block;
+    width: 100%;
+    border: transparent;
+    justify-content: space-between;
+    padding: 0.75rem 0.75rem;
+    
+  }
+
+  .more_destination > select{
+    margin: 10px;
+  }
+  #footerSection_div{
+    display: block;
+    margin-top: 4%;
+    gap: 0px;
+  }
+  .expediaImg{
+    margin-top: 1%;
+
+  }
+  .company{
+    line-height: 30px;
+    margin-top: 20px;
+
+  }
+
+  .Expedia{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  
+
+
+
+  .image_front>
+   h2 {
+    padding-top: 90px;
+  }
+}
+ 
