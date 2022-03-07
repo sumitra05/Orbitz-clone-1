@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: white;
+        text-align: center;
+      }
+
+      img.large-logo {
+        height: 2rem;
+        max-width: 40vw;
+        margin: 20px;
+        filter: brightness(0) invert(1);
+      }
+      .navbar {
+        background-color: rgb(1, 1, 44);
+        width: 100%;
+        height: 75px;
+        margin-top: 0px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .navbar li {
+        float: right;
+        list-style: none;
+        margin: 28px;
+        color: #fff;
+        font-size: 0.875rem;
+        font-weight: 500;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+      }
+      .navbar li a {
+        text-decoration: none;
+        /* padding: 4px; */
+        color: white;
+      }
+      .heading {
+        background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2021/11/01/ORB_Storefront_6_imgB_1400x600_20211028.jpg?impolicy=fcrop&w=900&h=506&q=mediumHigh");
+        width: 100%;
+        height: 500px;
+      }
+      li:first-child {
+        width: 60px;
+      }
+
+      /* <--------------sign in div-------------> */
+      .popup {
+        width: 1%;
+        margin: 40px auto;
+        text-align: center;
+      }
+      #form_text {
+        text-align: left;
+      }
+      #form_text p:hover {
+        color: rgb(24, 85, 85);
+        cursor: pointer;
+      }
+
+      #hoverPop {
+        display: none;
+        position: absolute;
+        top: 45px;
+        width: 400px;
+        padding: 30px;
+        margin-top: 45px;
+        margin-left: 300px;
+        height: auto;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        background-color: white;
+      }
+      #btn {
+        padding: 8px;
+        width: 100%;
+        background-color: rgb(167, 20, 45);
+      }
+      #btn a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+      }
+      #createAC {
+        margin-top: 20px;
+      }
+      #createAC a {
+        color: rgb(20, 77, 77);
+        text-decoration: none;
+      }
+      #hoverPop > h5 {
+        color: rgb(20, 77, 77);
+        cursor: pointer;
+      }
+
+      #hoverPop > h3 {
+        margin-top: -10px;
+      }
+
+      #hoverPop > p {
+        /* font-weight: 400; */
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8f/Orbitz_logo.svg/2560px-Orbitz_logo.svg.png"
+          alt="Logo de orbitz"
+          class="large-logo"
+        />
+        <li><a href="">More travel</a></li>
+      </div>
+
+      <div>
+        <li><a onclick="openPopup()">Sign in</a></li>
+        <li><a href="./trips.html">Trips</a></li>
+        <li><a href="">Support</a></li>
+        <li><a href="">List your property</a></li>
+        <li><a href="">Español</a></li>
+      </div>
+    </nav>
+    <img
+      src="https://forever.travel-assets.com/flex/flexmanager/images/2021/11/01/ORB_Storefront_6_imgB_1400x600_20211028.jpg?impolicy=fcrop&w=900&h=506&q=mediumHigh"
+      alt=""
+      class="heading"
+    />
+
+    <nav>
+      <div class="popup">
+        <div id="hoverPop">
+          <h3>Members can access discounts, points and special features</h3>
+
+          <div id="btn">
+            <a href="./sign_in.html">Sign in</a>
+          </div>
+
+          <div id="createAC">
+            <a href="./create_ac.html">Create a free account</a>
+          </div>
+
+          <div id="form_text">
+            <p>List of favorites</p>
+            <p>Loyalty program</p>
+            <hr />
+            <p>Feedback</p>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>
+
+<script>
+  function openPopup() {
+    document.getElementById("hoverPop").style.display = "block";
+  }
+
+  function closePopup() {
+    document.getElementById("hoverPop").style.display = "none";
+  }
+
+  window.onclick = function (event) {
+    var modal = document.getElementById("HoverPop");
+    if (event.target == modal) {
+      closePopup();
+    }
+  };
+</script>
