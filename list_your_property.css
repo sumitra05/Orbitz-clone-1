@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:  -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+}
+.right-section-inner{
+    padding-top: 100px;
+  
+
+}
+
+.container {
+    max-width: 1260px;
+    margin: auto;
+    font-family:  -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+    
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+.mb-30{
+    margin-bottom: 30px;
+}
+.mb-50{
+    margin-bottom: 50px;
+}
+
+.mb-60{
+    margin-bottom: 60px;
+}
+
+.inner-header {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 28px 0 rgb(6 15 34 / 12%);
+    
+}
+
+
+.hero-section {
+    background-image: url(https://headless.expediagroup.com/content/dam/marketing/headless/images/home-page/Content-page-image-hero-LG2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 60px;
+    width: 100%;
+    
+}
+
+.left-section {
+    width: 55%;
+   
+    
+}
+
+.right-section {
+    width: 45%;
+    
+}
+.pfont{
+    font-size: 12px;
+}
+.service-heading {
+    font-family:Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    color:#009;
+}
+.services-wrapper {
+    box-shadow: 0 2px 12px rgb(0 0 0 / 22%);
+    border-radius: 24px;
+    padding: 40px;
+   
+}
+
+.service-box-wrapper {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.service-box {
+    border: 2px solid blue;
+    padding: 20px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 240px;
+}
+.service-box p{
+    color:#5e6f73;
+}
+.wrap {
+    display: flex;
+}
+.logo-wrap img {
+    width: 100%;
+    max-width: 140px;
+    padding-top: 20px;
+}
+
+
+.option-box-wrapper {
+    display: flex;
+}
+
+.option-box,.benefits-box {
+    padding: 20px;
+}
+
+.option-box h2 {
+    margin-bottom: 10px;
+}
+
+.option-box-img img {
+    width: 100%;
+    max-width: 100px;
+}
+
+.brand-img img{
+    width: 140px;
+    max-width: 100%;
+  
+}
+.brand{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.benefits-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.benefits-box-img img{
+    width: 100%;
+    max-width: 200px;
+
+}
+.btn{
+    background-color: #009;
+    color: #fff;
+    padding: 15px;
+    border: none;
+}
+.btn a{
+    color: #fff;
+    text-decoration: none;
+}
+.getready{
+    background-color: gainsboro;
+    padding: 40px;
+}
+.partner{
+   display: flex;
+    justify-content: center;
+   
+}
+.partner a{
+    text-decoration: none;
+}
+.partner div{
+    padding: 18px;
+}
+.footer{
+    background-color: #009;
+    color: #fff;
+    padding: 40px;
+    
+}
+
+.footer-wrap{
+    display: flex;
+  
+   align-items: center;
+}
+.list{
+    list-style: none;
+   width: 100%;
+   max-width: 200px;
+}
+.list a{
+    color: white;
+    text-decoration: none;
+}
+.foot{
+    display: flex;
+    width: 100%;
+    max-width: 1260px;
+    justify-content: space-around;
+}
+
+.list > li{
+padding: 10px;
+}
+.footer img{
+    width: 100px;
+
+}
+hr{
+
+    width: 1000px;
+    
+}
+.bottom{
+    font-size: 12px;
+   padding: 20px;
+}
+.bottom a{
+    color: white;
+    text-decoration: none;
+
+}
+hr{
+    display: block;
+    unicode-bidi: isolate;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    overflow: hidden;
+    border-style: inset;
+   
+
+}
+
+
+@media(max-width:900px){
+    .right-section,.left-section{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .service-box-wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        
+    }
+    .right-section-inner{
+        width: 100%;
+    }
+    .option-box-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .brand{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .benefits-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .partner{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .foot{
+        display: flex;
+        flex-direction: column;
+        text-align: center; 
+      align-items: center;
+    } 
+    
+    hr{
+        text-align: center;
+    }
+}
